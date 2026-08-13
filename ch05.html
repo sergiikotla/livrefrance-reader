@@ -4,28 +4,36 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>5. Chercher du travail</title>
-<link rel="stylesheet" href="reader.css?v=b070c722">
+<link rel="stylesheet" href="reader.css?v=a99a7b50">
 <header><div class="wrap">
   <div class="top">
-    <a class="back" href="index.html">← глави</a>
+    <a class="back" href="index.html">← Розділи</a>
     <div>
       <h1>5. Chercher du travail</h1>
       <div class="sub">Пошук роботи</div>
     </div>
   </div>
-  
-<div class="bar js-only">
-  <button class="play" id="play" type="button" aria-label="грати">▶</button>
-  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
-  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
-  <span class="time" id="t">0:00</span>
-</div>
-<div class="chips js-only" id="chips"></div>
-<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
-<p class="err" id="err"></p>
 </div></header>
 <main><div class="wrap">
   <img class="cover" src="img/05.jpg" width="512" height="512" alt="">
+  
+<div class="player js-only" id="player">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <div class="prog">
+    <span class="t" id="tcur">0:00</span>
+    <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+    <span class="t r" id="tdur">2:28</span>
+  </div>
+  <div class="tools">
+    <button class="tool" id="rate" type="button" aria-haspopup="true" aria-expanded="false" aria-label="швидкість">1×</button>
+    <button class="tool" id="uabtn" type="button" aria-haspopup="true" aria-expanded="false">Переклад: завжди</button>
+    <button class="tool more" id="more" type="button" aria-haspopup="true" aria-expanded="false" aria-label="ще">⋯</button>
+    <div class="menu" id="menu" role="menu" hidden></div>
+  </div>
+  <p class="tip" id="tip" hidden>Натисніть речення, щоб почути його окремо.</p>
+</div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
   <p class="datum">Le jeudi 4 septembre — четвер, 4 вересня</p>
   <div class="seg" id="s0"><p class="fr">Le matin, Natalia ouvre son ordinateur. Vingt onglets, vingt offres d'emploi.</p><p class="ua">Зранку Наталя відкриває ноутбук. Двадцять вкладок, двадцять вакансій.</p></div>
 <div class="seg" id="s1"><p class="fr">Vendeuse. Serveuse. Caissière.</p><p class="ua">Продавчиня. Офіціантка. Касирка.</p></div>
@@ -69,6 +77,15 @@
 <div class="seg" id="s39"><p class="fr">Natalia dort à une heure du matin. Elle rêve en français, très mal.</p><p class="ua">Наталя засинає о першій ночі. Їй сниться сон французькою, дуже поганою.</p></div>
   <nav class="nav"><a href="ch04.html">← 4. Le premier cours</a><a href="ch06.html">6. Le premier entretien →</a></nav>
 </div></main>
+
+<div class="mini" id="mini" hidden>
+  <div class="mbar"><i id="mfill"></i></div>
+  <div class="wrap mrow">
+    <button class="mplay" id="mplay" type="button" aria-label="грати">▶</button>
+    <button class="mtext" id="mtext" type="button" aria-label="до плеєра"></button>
+    <span class="mrate" id="mrate">1×</span>
+  </div>
+</div>
 <script type="application/json" id="data">{"n": 5, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/05_dialog.mp3", "dur": 148.4, "t": [[0.1, 6.62], [6.76, 9.86], [9.92, 12.32], [13.24, 17.24], [18.22, 21.32], [22.2, 25.12], [26.34, 29.87], [30.62, 34.5], [36.42, 38.46], [39.36, 44.4], [45.52, 49.06], [49.12, 50.18], [50.94, 54.34], [55.4, 59.4], [60.22, 63.04], [63.8, 68.8], [68.88, 70.1], [70.96, 72.02], [72.96, 75.08], [75.84, 80.24], [80.88, 83.78], [84.34, 86.82], [87.54, 89.72], [90.58, 91.68], [92.5, 94.54], [94.58, 101.28], [102.32, 106.28], [107.18, 109.94], [110.72, 112.42], [113.3, 115.34], [116.24, 117.4], [118.76, 121.54], [122.38, 123.58], [124.66, 126.62], [127.68, 128.8], [129.8, 131.2], [132.26, 134.9], [135.8, 137.86], [138.74, 142.64], [143.46, 148.3]]}, {"id": "solo", "label": "одноголосна", "src": "audio/05_solo.mp3", "dur": 169.28, "t": [[0.069, 6.4], [6.44, 9.28], [9.493, 12.32], [13.262, 17.6], [18.905, 22.649], [22.969, 26.409], [28.076, 32.969], [33.049, 37.262], [38.082, 40.409], [41.516, 46.489], [47.905, 51.849], [52.783, 54.089], [55.081, 59.609], [60.893, 65.373], [66.645, 70.013], [70.253, 75.133], [76.472, 78.099], [79.366, 80.507], [81.939, 84.907], [85.027, 90.107], [90.4, 94.347], [94.534, 97.387], [98.805, 101.832], [102.421, 103.552], [104.739, 106.272], [106.485, 113.632], [115.064, 119.072], [120.168, 123.419], [124.252, 125.792], [127.036, 128.912], [130.749, 131.713], [133.282, 136.112], [137.44, 138.592], [140.184, 142.352], [143.68, 144.763], [146.32, 147.973], [149.233, 152.3], [154.03, 156.14], [157.245, 162.54], [164.063, 169.35]]}]}</script>
 <script>
 (function(){
@@ -81,21 +98,30 @@ var segs = [].slice.call(document.querySelectorAll('.seg'));
 var audio = new Audio();
 audio.preload = 'metadata';
 
-var KEY = 'lf-ch' + D.n, SET = 'lf-set';
-var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var KEY = 'lf-ch' + D.n, SET = 'lf-set', TIP = 'lf-tip';
+var st = load(SET, {rate:1, ua:'on', scroll:true, track:null});
+/* старі збереження: режим потік/фраза зник, а переклад звався інакше */
+st.ua = ({on:'on', active:'tap', off:'hidden', tap:'tap', hidden:'hidden'})[st.ua] || 'on';
+delete st.mode;
+
 var trackId = st.track;
 var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
-var cur = -1, only = -1, lastSaved = -1;
+var cur = -1, only = -1, lastSaved = -1, openKind = null;
 
 var $ = function(s){ return document.querySelector(s) };
-var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
-    chipsEl=$('#chips'), errEl=$('#err');
+var playBtn=$('#play'), seek=$('#seek'), tCur=$('#tcur'), tDur=$('#tdur'),
+    rateBtn=$('#rate'), uaBtn=$('#uabtn'), moreBtn=$('#more'), menu=$('#menu'),
+    tipEl=$('#tip'), errEl=$('#err'), player=$('#player'),
+    mini=$('#mini'), mPlay=$('#mplay'), mText=$('#mtext'), mRate=$('#mrate'),
+    mFill=$('#mfill');
 
 function show(m){ if(errEl){ errEl.textContent = m; } }
 function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
 function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
 function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
 function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+function rateLabel(r){ return String(r).replace('.', ',') + '×' }
+function pos(){ return audio.currentTime || 0 }
 
 /* ——— доріжка ——— */
 function setTrack(t, keepTime){
@@ -108,7 +134,6 @@ function setTrack(t, keepTime){
   audio.playbackRate = st.rate;
   paint();
 }
-function pos(){ return audio.currentTime || 0 }
 
 /* ——— підсвітка ——— */
 var timed = [];   // індекси фраз, у яких є таймкод
@@ -124,15 +149,35 @@ function segAt(time){
   }
   return best;
 }
+
+/* «Показати переклад» живе на активній фразі й лише в режимі «прихований» */
+var peek = document.createElement('button');
+peek.className = 'peek'; peek.type = 'button';
+peek.textContent = 'Показати переклад';
+peek.addEventListener('click', function(ev){
+  ev.stopPropagation();
+  if(segs[cur]) segs[cur].classList.add('reveal');
+  peek.hidden = true;
+});
+function placePeek(){
+  if(st.ua === 'hidden' && segs[cur]){
+    segs[cur].appendChild(peek);
+    peek.hidden = segs[cur].classList.contains('reveal');
+  } else if(peek.parentNode){
+    peek.parentNode.removeChild(peek);
+  }
+}
+
 function mark(i){
   if(i === cur) return;
   if(segs[cur]) segs[cur].classList.remove('active');
   cur = i;
   if(segs[i]){
     segs[i].classList.add('active');
-    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    placePeek();
     if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
   }
+  if(mText) mText.textContent = segs[i] ? segs[i].querySelector('.fr').textContent : '';
 }
 
 /* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
@@ -143,31 +188,34 @@ function suspended(){ return Date.now() - lastTouch < 6000 }
 });
 
 /* ——— відтворення ——— */
-function playFrom(i, single){
+function playAll(){
+  only = -1;
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function playOne(i){
   var t = track.t[i];
   if(!t || t[0] === null) return;
-  only = single ? i : -1;
+  only = i;
   audio.currentTime = t[0];
   mark(i);
   audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
 }
-function toggle(){
-  if(audio.paused){
-    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
-    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
-  } else { audio.pause(); }
-}
-function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+function toggle(){ if(audio.paused) playAll(); else audio.pause() }
+function repeat(){ if(cur >= 0) playOne(cur) }
 
 audio.addEventListener('timeupdate', function(){
   var p = pos();
   if(only >= 0){
-    var e = track.t[only][1];
-    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+    var end = track.t[only][1];
+    /* фраза дослухана: стаємо на її початок, щоб ▶ повів далі звідси */
+    if(end !== null && p >= end - 0.02){
+      audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return;
+    }
   }
   mark(segAt(p));
   if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
-  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if(mFill) mFill.style.width = (track.dur ? p / track.dur * 100 : 0) + '%';
+  tCur.textContent = fmt(p);
   if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
 });
 audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
@@ -176,6 +224,7 @@ audio.addEventListener('pause', paint);
 audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
 audio.addEventListener('loadedmetadata', function(){
   if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+  tDur.textContent = fmt(track.dur);
 });
 
 seek.addEventListener('input', function(){
@@ -185,51 +234,124 @@ seek.addEventListener('input', function(){
 segs.forEach(function(el, i){
   el.addEventListener('click', function(){
     if(track.t[i][0] === null) return;
-    if(st.mode === 'phrase'){ playFrom(i, true) }
-    else { playFrom(i, false) }
+    hideTip();
+    playOne(i);
   });
 });
 
 document.addEventListener('keydown', function(e){
   if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === 'Escape'){ closeMenu(); return }
   if(e.key === ' '){ e.preventDefault(); toggle() }
-  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
-  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playOne(Math.max(0, cur-1)) }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playOne(Math.min(segs.length-1, cur+1)) }
   else if(e.key === 'r' || e.key === 'R'){ repeat() }
 });
 
-/* ——— кнопки ——— */
-playBtn.addEventListener('click', toggle);
-repBtn.addEventListener('click', repeat);
-
-function chip(label, on, fn){
-  var b = document.createElement('button');
-  b.className = 'chip'; b.type = 'button';
-  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
-  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
-  chipsEl.appendChild(b);
+/* ——— підказка, один раз на пристрій ——— */
+function hideTip(){
+  if(tipEl && !tipEl.hidden){ tipEl.hidden = true; save(TIP, 1) }
 }
-function paint(){
-  playBtn.textContent = audio.paused ? '▶' : '❚❚';
-  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
-  document.body.classList.toggle('ua-off', st.ua === 'active');
-  document.body.classList.toggle('ua-none', st.ua === 'off');
-  audio.playbackRate = st.rate;
-  chipsEl.innerHTML = '';
-  [0.7, 0.85, 1].forEach(function(r){
-    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
-  });
-  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
-       st.ua === 'on',
-       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
-  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
-       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
-  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
-  if(D.tracks.length > 1){
-    D.tracks.forEach(function(t){
-      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
-    });
+try{ if(tipEl && !localStorage.getItem(TIP)) tipEl.hidden = false; }catch(e){}
+if(tipEl) tipEl.addEventListener('click', hideTip);
+
+/* ——— меню ——— */
+function head(text){
+  var h = document.createElement('h2'); h.textContent = text; menu.appendChild(h);
+}
+function sep(){
+  var s = document.createElement('div'); s.className = 'sep'; menu.appendChild(s);
+}
+function row(label, checked, fn, disabled){
+  var b = document.createElement('button');
+  b.className = 'mi'; b.type = 'button'; b.disabled = !!disabled;
+  b.appendChild(document.createTextNode(label));
+  if(checked){
+    var c = document.createElement('span');
+    c.className = 'ck'; c.textContent = '✓'; b.appendChild(c);
   }
+  b.addEventListener('click', function(){ fn(); save(SET, st); closeMenu(); paint() });
+  menu.appendChild(b);
+}
+function closeMenu(){
+  if(!menu) return;
+  menu.hidden = true; openKind = null;
+  [rateBtn, uaBtn, moreBtn].forEach(function(b){ b.setAttribute('aria-expanded','false') });
+}
+function openMenu(kind, btn){
+  if(openKind === kind){ closeMenu(); return }
+  closeMenu();
+  openKind = kind; menu.innerHTML = '';
+
+  if(kind === 'rate'){
+    head('Швидкість');
+    [0.7, 0.85, 1, 1.15, 1.25].forEach(function(r){
+      row(rateLabel(r), st.rate === r, function(){ st.rate = r });
+    });
+  } else if(kind === 'ua'){
+    head('Переклад');
+    [['on','Завжди'], ['tap','Після натискання'], ['hidden','Прихований']]
+      .forEach(function(o){
+        row(o[1], st.ua === o[0], function(){ st.ua = o[0] });
+      });
+  } else {
+    row('Автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+    row('Повторити фразу', false, repeat, cur < 0);
+    row('Назад 10 секунд', false, function(){
+      audio.currentTime = Math.max(0, pos() - 10); only = -1;
+    });
+    if(D.tracks.length > 1){
+      sep(); head('Озвучення');
+      D.tracks.forEach(function(t){
+        row(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+      });
+    }
+  }
+
+  menu.hidden = false;
+  btn.setAttribute('aria-expanded','true');
+  var room = menu.parentNode.clientWidth - menu.offsetWidth;
+  menu.style.left = Math.max(0, Math.min(btn.offsetLeft, room)) + 'px';
+}
+rateBtn.addEventListener('click', function(){ openMenu('rate', rateBtn) });
+uaBtn.addEventListener('click', function(){ openMenu('ua', uaBtn) });
+moreBtn.addEventListener('click', function(){ openMenu('more', moreBtn) });
+document.addEventListener('click', function(e){
+  if(openKind && !menu.contains(e.target) && !e.target.closest('.tool')) closeMenu();
+});
+
+/* ——— кнопки й малювання ——— */
+playBtn.addEventListener('click', toggle);
+if(mPlay) mPlay.addEventListener('click', toggle);
+if(mText) mText.addEventListener('click', function(){
+  player.scrollIntoView({block:'center', behavior:'smooth'});
+});
+
+function paint(){
+  var glyph = audio.paused ? '▶' : '❚❚';
+  playBtn.textContent = glyph;
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  if(mPlay) mPlay.textContent = glyph;
+  document.body.classList.toggle('ua-tap', st.ua === 'tap');
+  document.body.classList.toggle('ua-hidden', st.ua === 'hidden');
+  placePeek();
+  audio.playbackRate = st.rate;
+  rateBtn.textContent = rateLabel(st.rate);
+  uaBtn.textContent = 'Переклад: ' +
+    ({on:'завжди', tap:'після натискання', hidden:'прихований'})[st.ua];
+  if(mRate) mRate.textContent = rateLabel(st.rate);
+  /* поки жодної фрази не звучало, у компактному плеєрі стоїть назва глави */
+  if(mText && !mText.textContent){
+    var h = document.querySelector('h1');
+    mText.textContent = h ? h.textContent : '';
+  }
+}
+
+/* великий плеєр пішов з екрана — знизу з'являється компактний */
+if(mini && player && window.IntersectionObserver){
+  new IntersectionObserver(function(es){
+    mini.hidden = es[0].isIntersecting;
+  }, {rootMargin: '-8px'}).observe(player);
 }
 
 /* ——— старт ——— */
@@ -239,7 +361,8 @@ if(seen.t > 2 && (!seen.track || seen.track === trackId)){
   audio.currentTime = seen.t;
   mark(segAt(seen.t));
 }
-tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+tCur.textContent = fmt(pos());
+tDur.textContent = fmt(track.dur);
 paint();
 })();
 </script>
