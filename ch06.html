@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>6. Le premier entretien</title>
+<link rel="stylesheet" href="reader.css">
+<header><div class="wrap">
+  <div class="top">
+    <a class="back" href="index.html">← глави</a>
+    <div>
+      <h1>6. Le premier entretien</h1>
+      <div class="sub">Перша співбесіда</div>
+    </div>
+  </div>
+  
+<div class="bar js-only">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
+  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+  <span class="time" id="t">0:00</span>
+</div>
+<div class="chips js-only" id="chips"></div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
+</div></header>
+<main><div class="wrap">
+  <p class="datum">Le mardi 9 septembre — вівторок, 9 вересня</p>
+  <div class="seg" id="s0"><p class="fr">La boulangerie est rue Oberkampf. Il est neuf heures et ça sent le pain chaud.</p><p class="ua">Булочна на вулиці Оберкампф. Дев'ята ранку, і пахне гарячим хлібом.</p></div>
+<div class="seg" id="s1"><p class="fr">Natalia sait déjà qu'elle va se souvenir de cette odeur toute sa vie.</p><p class="ua">Наталя вже знає, що запам'ятає цей запах на все життя.</p></div>
+<div class="seg" id="s2"><p class="fr">Le patron a cinquante ans, de la farine sur les mains et un vrai sourire.</p><p class="ua">Господареві п'ятдесят, у нього борошно на руках і справжня усмішка.</p></div>
+<div class="seg" id="s3"><p class="fr">— Bonjour ! Vous êtes madame Kovalenko ? Asseyez-vous.</p><p class="ua">— Добрий день! Ви пані Коваленко? Сідайте.</p></div>
+<div class="seg" id="s4"><p class="fr">C'est son premier entretien en français. Elle respire. D'abord, tu respires.</p><p class="ua">Це її перша співбесіда французькою. Вона вдихає. Спершу дихай.</p></div>
+<div class="seg" id="s5"><p class="fr">— Alors. Vous cherchez un travail ?</p><p class="ua">— Отже. Ви шукаєте роботу?</p></div>
+<div class="seg" id="s6"><p class="fr">— Oui. Je cherche un travail.</p><p class="ua">— Так. Я шукаю роботу.</p></div>
+<div class="seg" id="s7"><p class="fr">— Vous avez de l'expérience ?</p><p class="ua">— У вас є досвід?</p></div>
+<div class="seg" id="s8"><p class="fr">— J'ai travaillé quatre ans dans la logistique.</p><p class="ua">— Я чотири роки працювала в логістиці.</p></div>
+<div class="seg" id="s9"><p class="fr">— Et vous êtes disponible quand ?</p><p class="ua">— А коли ви можете почати?</p></div>
+<div class="seg" id="s10"><p class="fr">— Je suis disponible tout de suite.</p><p class="ua">— Я можу почати одразу.</p></div>
+<div class="seg" id="s11"><p class="fr">Il fait oui de la tête. Ça marche. Trois questions, trois réponses.</p><p class="ua">Він киває. Виходить. Три питання, три відповіді.</p></div>
+<div class="seg" id="s12"><p class="fr">Puis il pose ses mains sur la table.</p><p class="ua">Потім він кладе руки на стіл.</p></div>
+<div class="seg" id="s13"><p class="fr">— Bon. Parlez-moi de vous.</p><p class="ua">— Добре. Розкажіть про себе.</p></div>
+<div class="seg" id="s14"><p class="fr">Une seconde. Deux. Trois. Quatre.</p><p class="ua">Секунда. Дві. Три. Чотири.</p></div>
+<div class="seg" id="s15"><p class="fr">Elle connaît ces mots. Parlez. Moi. De. Vous. Elle les connaît tous.</p><p class="ua">Вона знає ці слова. Роз-ка-жіть. Про. Себе. Вона знає їх усі.</p></div>
+<div class="seg" id="s16"><p class="fr">Mais entre les mots et sa bouche, il n'y a plus rien.</p><p class="ua">Але між словами і її ротом більше немає нічого.</p></div>
+<div class="seg" id="s17"><p class="fr">« J'ai oublié tous les mots », pense-t-elle.</p><p class="ua">«Я забула всі слова», — думає вона.</p></div>
+<div class="seg" id="s18"><p class="fr">— Je... j'ai trente ans. Je suis... Pardon.</p><p class="ua">— Я… мені тридцять років. Я… Вибачте.</p></div>
+<div class="seg" id="s19"><p class="fr">— Prenez votre temps.</p><p class="ua">— Не поспішайте.</p></div>
+<div class="seg" id="s20"><p class="fr">— Mes qualités... Je suis organisée. Et rapide. Et...</p><p class="ua">— Мої якості… Я організована. І швидка. І…</p></div>
+<div class="seg" id="s21"><p class="fr">Elle s'arrête.</p><p class="ua">Вона замовкає.</p></div>
+<div class="seg" id="s22"><p class="fr">Le patron attend encore un peu. Puis il sourit gentiment, et c'est pire.</p><p class="ua">Господар чекає ще трохи. Потім усміхається лагідно — і від цього тільки гірше.</p></div>
+<div class="seg" id="s23"><p class="fr">— C'est dommage. Votre français va venir, vous savez. On vous rappellera.</p><p class="ua">— Шкода. Ваша французька прийде, знаєте. Ми вам передзвонимо.</p></div>
+<div class="seg" id="s24"><p class="fr">Sur le trottoir, il fait beau.</p><p class="ua">На тротуарі гарна погода.</p></div>
+<div class="seg" id="s25"><p class="fr">Natalia marche vingt mètres, s'arrête devant une porte cochère et pleure exactement une minute.</p><p class="ua">Наталя проходить двадцять метрів, зупиняється біля брами й плаче рівно хвилину.</p></div>
+<div class="seg" id="s26"><p class="fr">Puis elle regarde sa montre, essuie son visage et entre dans le premier bar.</p><p class="ua">Потім дивиться на годинник, витирає обличчя й заходить у перший-ліпший бар.</p></div>
+<div class="seg" id="s27"><p class="fr">— Un café, s'il vous plaît.</p><p class="ua">— Каву, будь ласка.</p></div>
+<div class="seg" id="s28"><p class="fr">Le café est trop chaud. Elle le boit quand même.</p><p class="ua">Кава занадто гаряча. Вона все одно її п'є.</p></div>
+<div class="seg" id="s29"><p class="fr">Elle sort un petit carnet de son sac. Sur la première page, elle écrit quatre mots :</p><p class="ua">Вона дістає з сумки маленький блокнот. На першій сторінці пише чотири слова:</p></div>
+<div class="seg" id="s30"><p class="fr">Parlez-moi de vous.</p><p class="ua">Розкажіть про себе.</p></div>
+<div class="seg" id="s31"><p class="fr">Elle regarde la phrase longtemps. Puis elle écrit une ligne en dessous :</p><p class="ua">Вона довго дивиться на цю фразу. Потім дописує знизу один рядок:</p></div>
+<div class="seg" id="s32"><p class="fr">La prochaine fois.</p><p class="ua">Наступного разу.</p></div>
+<div class="seg" id="s33"><p class="fr">Elle referme le carnet.</p><p class="ua">Вона закриває блокнот.</p></div>
+<div class="seg" id="s34"><p class="fr">— Ce n'est pas grave, dit-elle à voix haute.</p><p class="ua">— Нічого страшного, — каже вона вголос.</p></div>
+<div class="seg" id="s35"><p class="fr">Le garçon la regarde. Elle sourit.</p><p class="ua">Офіціант дивиться на неї. Вона усміхається.</p></div>
+<div class="seg" id="s36"><p class="fr">C'est la première phrase de la journée qu'elle dit sans avoir peur.</p><p class="ua">Це перша за день фраза, яку вона сказала без страху.</p></div>
+  <nav class="nav"><a href="ch05.html">← 5. Chercher du travail</a><a href="ch07.html">7. Oksana dit la vérité →</a></nav>
+</div></main>
+<script type="application/json" id="data">{"n": 6, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/06_dialog.mp3", "dur": 151.36, "t": [[0.12, 5.3], [6.24, 10.52], [11.24, 15.44], [16.44, 19.76], [21.06, 27.2], [28.0, 29.66], [30.58, 32.18], [33.02, 34.0], [34.92, 37.12], [38.02, 39.16], [40.06, 41.82], [42.78, 47.64], [48.4, 50.5], [51.36, 52.78], [53.84, 59.76], [60.64, 67.66], [68.34, 71.36], [72.44, 74.92], [76.14, 80.26], [81.12, 81.82], [82.98, 87.97], [89.22, 89.88], [90.86, 95.7], [96.62, 100.74], [101.66, 103.46], [104.42, 110.88], [111.92, 116.74], [117.92, 119.0], [120.26, 122.96], [123.82, 129.32], [130.3, 131.66], [132.9, 137.2], [138.18, 139.22], [140.28, 141.5], [142.58, 143.36], [144.44, 146.88], [147.78, 151.24]]}, {"id": "solo", "label": "одноголосна", "src": "audio/06_solo.mp3", "dur": 168.8, "t": [[0.147, 5.84], [5.907, 9.68], [10.787, 15.04], [16.06, 19.519], [19.64, 26.0], [27.333, 28.96], [30.072, 31.52], [32.521, 33.689], [35.038, 36.971], [38.238, 39.451], [40.72, 42.491], [43.678, 49.051], [49.371, 51.531], [52.695, 54.251], [55.667, 62.411], [63.499, 72.971], [73.115, 76.731], [78.084, 80.497], [82.355, 86.897], [88.153, 89.057], [90.397, 95.617], [96.398, 97.059], [97.326, 103.219], [104.668, 109.468], [111.033, 112.993], [113.18, 121.073], [122.345, 128.113], [129.622, 130.673], [132.175, 135.473], [137.06, 142.833], [144.093, 145.953], [147.416, 151.8], [152.813, 153.88], [155.387, 156.68], [157.867, 158.76], [159.939, 162.44], [162.92, 168.04]]}]}</script>
+<script>
+(function(){
+document.body.classList.add('js');
+var D;
+try{ D = JSON.parse(document.getElementById('data').textContent); }
+catch(e){ return show('дані глави не прочиталися: '+e); }
+
+var segs = [].slice.call(document.querySelectorAll('.seg'));
+var audio = new Audio();
+audio.preload = 'metadata';
+
+var KEY = 'lf-ch' + D.n, SET = 'lf-set';
+var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var trackId = st.track;
+var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
+var cur = -1, only = -1, lastSaved = -1;
+
+var $ = function(s){ return document.querySelector(s) };
+var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
+    chipsEl=$('#chips'), errEl=$('#err');
+
+function show(m){ if(errEl){ errEl.textContent = m; } }
+function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
+function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+
+/* ——— доріжка ——— */
+function setTrack(t, keepTime){
+  var at = keepTime ? pos() : 0;
+  track = t; trackId = t.id; st.track = t.id; save(SET, st);
+  reindex();
+  audio.src = t.src;
+  audio.load();
+  if(at) audio.currentTime = at;
+  audio.playbackRate = st.rate;
+  paint();
+}
+function pos(){ return audio.currentTime || 0 }
+
+/* ——— підсвітка ——— */
+var timed = [];   // індекси фраз, у яких є таймкод
+function reindex(){
+  timed = [];
+  track.t.forEach(function(p, i){ if(p[0] !== null) timed.push(i) });
+}
+function segAt(time){
+  var lo = 0, hi = timed.length - 1, best = -1;
+  while(lo <= hi){
+    var m = (lo + hi) >> 1;
+    if(track.t[timed[m]][0] <= time + 0.02){ best = timed[m]; lo = m + 1 } else { hi = m - 1 }
+  }
+  return best;
+}
+function mark(i){
+  if(i === cur) return;
+  if(segs[cur]) segs[cur].classList.remove('active');
+  cur = i;
+  if(segs[i]){
+    segs[i].classList.add('active');
+    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
+  }
+}
+
+/* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
+var lastTouch = 0;
+function suspended(){ return Date.now() - lastTouch < 6000 }
+['wheel','touchmove'].forEach(function(ev){
+  window.addEventListener(ev, function(){ lastTouch = Date.now() }, {passive:true});
+});
+
+/* ——— відтворення ——— */
+function playFrom(i, single){
+  var t = track.t[i];
+  if(!t || t[0] === null) return;
+  only = single ? i : -1;
+  audio.currentTime = t[0];
+  mark(i);
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function toggle(){
+  if(audio.paused){
+    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
+    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
+  } else { audio.pause(); }
+}
+function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+
+audio.addEventListener('timeupdate', function(){
+  var p = pos();
+  if(only >= 0){
+    var e = track.t[only][1];
+    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+  }
+  mark(segAt(p));
+  if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
+  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
+});
+audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
+audio.addEventListener('play', function(){ clearErr(); paint() });
+audio.addEventListener('pause', paint);
+audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
+audio.addEventListener('loadedmetadata', function(){
+  if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+});
+
+seek.addEventListener('input', function(){
+  audio.currentTime = seek.value / 1000 * track.dur; only = -1;
+});
+
+segs.forEach(function(el, i){
+  el.addEventListener('click', function(){
+    if(track.t[i][0] === null) return;
+    if(st.mode === 'phrase'){ playFrom(i, true) }
+    else { playFrom(i, false) }
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === ' '){ e.preventDefault(); toggle() }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'r' || e.key === 'R'){ repeat() }
+});
+
+/* ——— кнопки ——— */
+playBtn.addEventListener('click', toggle);
+repBtn.addEventListener('click', repeat);
+
+function chip(label, on, fn){
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button';
+  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
+  chipsEl.appendChild(b);
+}
+function paint(){
+  playBtn.textContent = audio.paused ? '▶' : '❚❚';
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  document.body.classList.toggle('ua-off', st.ua === 'active');
+  document.body.classList.toggle('ua-none', st.ua === 'off');
+  audio.playbackRate = st.rate;
+  chipsEl.innerHTML = '';
+  [0.7, 0.85, 1].forEach(function(r){
+    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
+  });
+  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
+       st.ua === 'on',
+       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
+  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
+       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
+  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+  if(D.tracks.length > 1){
+    D.tracks.forEach(function(t){
+      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+    });
+  }
+}
+
+/* ——— старт ——— */
+setTrack(track, false);
+var seen = load(KEY, {t:0, track:null});
+if(seen.t > 2 && (!seen.track || seen.track === trackId)){
+  audio.currentTime = seen.t;
+  mark(segAt(seen.t));
+}
+tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+paint();
+})();
+</script>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>20. Le client anglais</title>
+<link rel="stylesheet" href="reader.css">
+<header><div class="wrap">
+  <div class="top">
+    <a class="back" href="index.html">← глави</a>
+    <div>
+      <h1>20. Le client anglais</h1>
+      <div class="sub">Клієнт-англієць</div>
+    </div>
+  </div>
+  
+<div class="bar js-only">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
+  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+  <span class="time" id="t">0:00</span>
+</div>
+<div class="chips js-only" id="chips"></div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
+</div></header>
+<main><div class="wrap">
+  <p class="datum">Le samedi 18 octobre — субота, 18 жовтня</p>
+  <div class="seg" id="s0"><p class="fr">La porte ne se ferme pas.</p><p class="ua">Двері не зачиняються.</p></div>
+<div class="seg" id="s1"><p class="fr">Le samedi, c'est comme ça : elle s'ouvre, quelqu'un entre, elle s'ouvre encore.</p><p class="ua">У суботу завжди так: відчиняються, хтось заходить, і знову відчиняються.</p></div>
+<div class="seg" id="s2"><p class="fr">Karim coupe les tiges. Natalia vend.</p><p class="ua">Карім ріже стебла. Наталя продає.</p></div>
+<div class="seg" id="s3"><p class="fr">À onze heures, il y a quatre personnes qui attendent.</p><p class="ua">Об одинадцятій четверо людей чекають своєї черги.</p></div>
+<div class="seg" id="s4"><p class="fr">L'homme attend son tour près de la porte.</p><p class="ua">Той чоловік чекає біля дверей.</p></div>
+<div class="seg" id="s5"><p class="fr">Soixante ans, une casquette, et un plan de Paris qu'il n'ouvre pas.</p><p class="ua">Шістдесят років, кепка, і план Парижа, який він так і не розгортає.</p></div>
+<div class="seg" id="s6"><p class="fr">— Bonjour. Je voudrais... des flowers. Pardon. Des fleurs.</p><p class="ua">— Добрий день. Я хотів би… flowers. Перепрошую. Квіти.</p></div>
+<div class="seg" id="s7"><p class="fr">— Bonjour. Ici, il y a des fleurs.</p><p class="ua">— Добрий день. Квіти тут є.</p></div>
+<div class="seg" id="s8"><p class="fr">Il rit. Tout de suite, c'est plus facile.</p><p class="ua">Він сміється. І одразу стає легше.</p></div>
+<div class="seg" id="s9"><p class="fr">— C'est pour offrir ?</p><p class="ua">— Це в подарунок?</p></div>
+<div class="seg" id="s10"><p class="fr">— Pardon ? Vous pouvez répéter ?</p><p class="ua">— Перепрошую? Можете повторити?</p></div>
+<div class="seg" id="s11"><p class="fr">— C'est un cadeau ?</p><p class="ua">— Це подарунок?</p></div>
+<div class="seg" id="s12"><p class="fr">— Ah ! Oui. Un cadeau. Pour ma... wife. Comment on dit ?</p><p class="ua">— А! Так. Подарунок. Для моя… wife. Як це сказати?</p></div>
+<div class="seg" id="s13"><p class="fr">— Votre femme.</p><p class="ua">— Ваша дружина.</p></div>
+<div class="seg" id="s14"><p class="fr">— Ma femme. Vingt-cinq ans de... marriage. Aujourd'hui.</p><p class="ua">— Моя дружина. Двадцять п'ять років… marriage. Сьогодні.</p></div>
+<div class="seg" id="s15"><p class="fr">— Vingt-cinq ans de mariage. Félicitations.</p><p class="ua">— Двадцять п'ять років шлюбу. Вітаю.</p></div>
+<div class="seg" id="s16"><p class="fr">Natalia parle plus lentement. Pas plus fort. Plus lentement.</p><p class="ua">Наталя говорить повільніше. Не голосніше. Повільніше.</p></div>
+<div class="seg" id="s17"><p class="fr">— Sorry. Mon français est terrible.</p><p class="ua">— Sorry. Моя французька жахлива.</p></div>
+<div class="seg" id="s18"><p class="fr">— Mon français aussi.</p><p class="ua">— Моя теж.</p></div>
+<div class="seg" id="s19"><p class="fr">— Non. Vous, vous parlez.</p><p class="ua">— Ні. Ви — ви говорите.</p></div>
+<div class="seg" id="s20"><p class="fr">Elle ne répond pas. Elle pose la question suivante.</p><p class="ua">Вона не відповідає. Вона ставить наступне питання.</p></div>
+<div class="seg" id="s21"><p class="fr">— Elle aime le rouge ?</p><p class="ua">— Вона любить червоне?</p></div>
+<div class="seg" id="s22"><p class="fr">— Oui, le rouge. Un rose rouge ?</p><p class="ua">— Так, червоне. Один червона троянда?</p></div>
+<div class="seg" id="s23"><p class="fr">— Une rose rouge.</p><p class="ua">— Одна червона троянда.</p></div>
+<div class="seg" id="s24"><p class="fr">— Une rose rouge. D'accord.</p><p class="ua">— Одна червона троянда. Добре.</p></div>
+<div class="seg" id="s25"><p class="fr">— Et les grandes fleurs ou les petites ?</p><p class="ua">— А великі квіти чи дрібні?</p></div>
+<div class="seg" id="s26"><p class="fr">— Pardon ?</p><p class="ua">— Перепрошую?</p></div>
+<div class="seg" id="s27"><p class="fr">— Grandes fleurs ? Petites fleurs ?</p><p class="ua">— Великі квіти? Дрібні квіти?</p></div>
+<div class="seg" id="s28"><p class="fr">— Ah ! Les grandes. Les grandes, oui.</p><p class="ua">— А! Великі. Великі, так.</p></div>
+<div class="seg" id="s29"><p class="fr">— Vous voulez un grand bouquet ?</p><p class="ua">— Хочете великий букет?</p></div>
+<div class="seg" id="s30"><p class="fr">— Un bouquet grand. Grand bouquet. Sorry.</p><p class="ua">— Букет великий. Великий букет. Sorry.</p></div>
+<div class="seg" id="s31"><p class="fr">— C'est ça. Et vous voulez dépenser combien ?</p><p class="ua">— Саме так. А скільки хочете витратити?</p></div>
+<div class="seg" id="s32"><p class="fr">— Plus lentement, s'il vous plaît.</p><p class="ua">— Повільніше, будь ласка.</p></div>
+<div class="seg" id="s33"><p class="fr">— Qua-rante euros ? Cin-quante ?</p><p class="ua">— Со-рок євро? П'ят-де-сят?</p></div>
+<div class="seg" id="s34"><p class="fr">— Quarante. Cinquante, si c'est beau.</p><p class="ua">— Сорок. П'ятдесят, якщо буде гарно.</p></div>
+<div class="seg" id="s35"><p class="fr">Il montre les chrysanthèmes près de la porte.</p><p class="ua">Він показує на хризантеми біля дверей.</p></div>
+<div class="seg" id="s36"><p class="fr">— Et ça ? C'est joli, ça.</p><p class="ua">— А оце? Оце гарне.</p></div>
+<div class="seg" id="s37"><p class="fr">— Ça, non. En France, c'est pour les morts.</p><p class="ua">— Оце — ні. У Франції це для померлих.</p></div>
+<div class="seg" id="s38"><p class="fr">— Oh. Oh non. Merci !</p><p class="ua">— О. О ні. Дякую!</p></div>
+<div class="seg" id="s39"><p class="fr">Il rit très fort. Deux clientes se retournent.</p><p class="ua">Він регоче на весь магазин. Дві клієнтки обертаються.</p></div>
+<div class="seg" id="s40"><p class="fr">Natalia prend neuf roses rouges. Cinq dahlias. Un peu d'eucalyptus.</p><p class="ua">Наталя бере дев'ять червоних троянд. П'ять жоржин. Трохи евкаліпта.</p></div>
+<div class="seg" id="s41"><p class="fr">Le papier. Deux tours de ruban.</p><p class="ua">Папір. Два оберти стрічки.</p></div>
+<div class="seg" id="s42"><p class="fr">— Vous voulez une carte ?</p><p class="ua">— Хочете листівку?</p></div>
+<div class="seg" id="s43"><p class="fr">— Oui. Comment on écrit « happy anniversary » ?</p><p class="ua">— Так. Як пишеться «happy anniversary»?</p></div>
+<div class="seg" id="s44"><p class="fr">— Joyeux anniversaire.</p><p class="ua">— «Joyeux anniversaire» — щасливої річниці.</p></div>
+<div class="seg" id="s45"><p class="fr">Elle écrit les deux mots sur un papier.</p><p class="ua">Вона пише ці два слова на папірці.</p></div>
+<div class="seg" id="s46"><p class="fr">Il copie, lettre par lettre, très sérieusement.</p><p class="ua">Він переписує, літера за літерою, дуже серйозно.</p></div>
+<div class="seg" id="s47"><p class="fr">— Ça fait combien ?</p><p class="ua">— Скільки з мене?</p></div>
+<div class="seg" id="s48"><p class="fr">— Neuf roses, vingt-sept euros. Cinq dahlias, douze euros cinquante. L'eucalyptus, quatre euros.</p><p class="ua">— Дев'ять троянд — двадцять сім євро. П'ять жоржин — дванадцять євро п'ятдесят. Евкаліпт — чотири євро.</p></div>
+<div class="seg" id="s49"><p class="fr">— Ça fait quarante-trois euros cinquante.</p><p class="ua">— Разом сорок три євро п'ятдесят.</p></div>
+<div class="seg" id="s50"><p class="fr">— Pardon ? Répétez, s'il vous plaît.</p><p class="ua">— Перепрошую? Повторіть, будь ласка.</p></div>
+<div class="seg" id="s51"><p class="fr">— Qua-rante-trois euros cin-quante.</p><p class="ua">— Со-рок три євро п'ят-де-сят.</p></div>
+<div class="seg" id="s52"><p class="fr">— Quarante-trois cinquante. C'est ça ?</p><p class="ua">— Сорок три п'ятдесят. Так?</p></div>
+<div class="seg" id="s53"><p class="fr">— C'est ça.</p><p class="ua">— Саме так.</p></div>
+<div class="seg" id="s54"><p class="fr">Il paie par carte.</p><p class="ua">Він платить карткою.</p></div>
+<div class="seg" id="s55"><p class="fr">Il prend le bouquet à deux mains, comme un enfant.</p><p class="ua">Бере букет обома руками, як дитина.</p></div>
+<div class="seg" id="s56"><p class="fr">— Merci. Vous avez été très... patient. Patiente.</p><p class="ua">— Дякую. Ви були дуже… терплячий. Терпляча.</p></div>
+<div class="seg" id="s57"><p class="fr">— Patiente. C'est ça.</p><p class="ua">— Терпляча. Саме так.</p></div>
+<div class="seg" id="s58"><p class="fr">— Vous êtes française ?</p><p class="ua">— Ви француженка?</p></div>
+<div class="seg" id="s59"><p class="fr">— Non. Ukrainienne.</p><p class="ua">— Ні. Українка.</p></div>
+<div class="seg" id="s60"><p class="fr">— Ah ! Moi, Manchester. Bonne journée !</p><p class="ua">— А! А я — Манчестер. Гарного дня!</p></div>
+<div class="seg" id="s61"><p class="fr">La porte se ferme derrière lui.</p><p class="ua">Двері за ним зачиняються.</p></div>
+<div class="seg" id="s62"><p class="fr">— Nathalie. Quarante-trois cinquante. C'est ouf, dit Karim.</p><p class="ua">— Наталі. Сорок три п'ятдесят. C'est ouf, — каже Карім.</p></div>
+<div class="seg" id="s63"><p class="fr">— « Ouf » ?</p><p class="ua">— «Ouf»?</p></div>
+<div class="seg" id="s64"><p class="fr">— « Ouf », c'est « fou » à l'envers. C'est fou. C'est la plus grosse vente de la semaine.</p><p class="ua">— «Ouf» — це «fou» навпаки. Божевілля. Це найбільший продаж за тиждень.</p></div>
+<div class="seg" id="s65"><p class="fr">À une heure, il y a encore six personnes dans le magasin.</p><p class="ua">О першій у магазині ще шестеро людей.</p></div>
+<div class="seg" id="s66"><p class="fr">Le soir, dans le carnet, il n'y a pas de mot nouveau.</p><p class="ua">Увечері в блокноті немає жодного нового слова.</p></div>
+<div class="seg" id="s67"><p class="fr">Il y a une phrase : « Plus lentement, s'il vous plaît. »</p><p class="ua">Там одна фраза: «Plus lentement, s'il vous plaît» — «Повільніше, будь ласка».</p></div>
+<div class="seg" id="s68"><p class="fr">Ce n'est pas elle qui l'a dite aujourd'hui.</p><p class="ua">Сьогодні цю фразу сказала не вона.</p></div>
+  <nav class="nav"><a href="ch19.html">← 19. Un client qui ne sait pas</a><a href="ch21.html">21. Le téléphone →</a></nav>
+</div></main>
+<script type="application/json" id="data">{"n": 20, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/20_dialog.mp3", "dur": 218.8, "t": [[0.2, 1.86], [2.48, 7.479], [8.5, 10.84], [11.52, 14.18], [15.1, 17.3], [18.0, 22.46], [23.52, 28.599], [29.6, 31.9], [32.6, 34.98], [36.08, 36.92], [37.98, 39.7], [40.76, 41.42], [42.24, 46.96], [47.72, 48.68], [49.46, 53.14], [54.06, 56.54], [57.38, 61.52], [62.42, 64.519], [65.379, 66.42], [67.34, 69.16], [70.02, 73.22], [74.42, 75.36], [76.22, 78.72], [79.54, 80.92], [81.72, 83.4], [84.08, 86.36], [87.2, 87.52], [88.42, 90.78], [91.64, 93.78], [94.64, 95.99], [96.84, 100.0], [100.1, 102.32], [103.36, 104.72], [105.56, 108.12], [109.04, 111.42], [112.16, 114.56], [115.54, 117.88], [118.16, 120.9], [121.8, 123.56], [124.4, 127.2], [127.82, 132.62], [133.02, 135.32], [136.42, 137.42], [138.34, 141.04], [141.94, 143.42], [143.98, 145.88], [146.48, 150.46], [150.7, 151.36], [152.24, 159.24], [159.68, 161.72], [162.42, 164.28], [165.06, 168.8], [169.52, 171.52], [172.44, 172.84], [173.52, 174.54], [175.1, 177.48], [178.26, 182.109], [182.86, 184.22], [184.98, 185.92], [186.86, 188.12], [188.94, 191.4], [192.32, 193.94], [194.58, 197.7], [198.44, 198.7], [199.56, 205.459], [205.58, 208.62], [209.62, 213.18], [213.24, 216.25], [217.1, 218.76]]}]}</script>
+<script>
+(function(){
+document.body.classList.add('js');
+var D;
+try{ D = JSON.parse(document.getElementById('data').textContent); }
+catch(e){ return show('дані глави не прочиталися: '+e); }
+
+var segs = [].slice.call(document.querySelectorAll('.seg'));
+var audio = new Audio();
+audio.preload = 'metadata';
+
+var KEY = 'lf-ch' + D.n, SET = 'lf-set';
+var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var trackId = st.track;
+var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
+var cur = -1, only = -1, lastSaved = -1;
+
+var $ = function(s){ return document.querySelector(s) };
+var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
+    chipsEl=$('#chips'), errEl=$('#err');
+
+function show(m){ if(errEl){ errEl.textContent = m; } }
+function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
+function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+
+/* ——— доріжка ——— */
+function setTrack(t, keepTime){
+  var at = keepTime ? pos() : 0;
+  track = t; trackId = t.id; st.track = t.id; save(SET, st);
+  reindex();
+  audio.src = t.src;
+  audio.load();
+  if(at) audio.currentTime = at;
+  audio.playbackRate = st.rate;
+  paint();
+}
+function pos(){ return audio.currentTime || 0 }
+
+/* ——— підсвітка ——— */
+var timed = [];   // індекси фраз, у яких є таймкод
+function reindex(){
+  timed = [];
+  track.t.forEach(function(p, i){ if(p[0] !== null) timed.push(i) });
+}
+function segAt(time){
+  var lo = 0, hi = timed.length - 1, best = -1;
+  while(lo <= hi){
+    var m = (lo + hi) >> 1;
+    if(track.t[timed[m]][0] <= time + 0.02){ best = timed[m]; lo = m + 1 } else { hi = m - 1 }
+  }
+  return best;
+}
+function mark(i){
+  if(i === cur) return;
+  if(segs[cur]) segs[cur].classList.remove('active');
+  cur = i;
+  if(segs[i]){
+    segs[i].classList.add('active');
+    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
+  }
+}
+
+/* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
+var lastTouch = 0;
+function suspended(){ return Date.now() - lastTouch < 6000 }
+['wheel','touchmove'].forEach(function(ev){
+  window.addEventListener(ev, function(){ lastTouch = Date.now() }, {passive:true});
+});
+
+/* ——— відтворення ——— */
+function playFrom(i, single){
+  var t = track.t[i];
+  if(!t || t[0] === null) return;
+  only = single ? i : -1;
+  audio.currentTime = t[0];
+  mark(i);
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function toggle(){
+  if(audio.paused){
+    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
+    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
+  } else { audio.pause(); }
+}
+function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+
+audio.addEventListener('timeupdate', function(){
+  var p = pos();
+  if(only >= 0){
+    var e = track.t[only][1];
+    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+  }
+  mark(segAt(p));
+  if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
+  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
+});
+audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
+audio.addEventListener('play', function(){ clearErr(); paint() });
+audio.addEventListener('pause', paint);
+audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
+audio.addEventListener('loadedmetadata', function(){
+  if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+});
+
+seek.addEventListener('input', function(){
+  audio.currentTime = seek.value / 1000 * track.dur; only = -1;
+});
+
+segs.forEach(function(el, i){
+  el.addEventListener('click', function(){
+    if(track.t[i][0] === null) return;
+    if(st.mode === 'phrase'){ playFrom(i, true) }
+    else { playFrom(i, false) }
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === ' '){ e.preventDefault(); toggle() }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'r' || e.key === 'R'){ repeat() }
+});
+
+/* ——— кнопки ——— */
+playBtn.addEventListener('click', toggle);
+repBtn.addEventListener('click', repeat);
+
+function chip(label, on, fn){
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button';
+  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
+  chipsEl.appendChild(b);
+}
+function paint(){
+  playBtn.textContent = audio.paused ? '▶' : '❚❚';
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  document.body.classList.toggle('ua-off', st.ua === 'active');
+  document.body.classList.toggle('ua-none', st.ua === 'off');
+  audio.playbackRate = st.rate;
+  chipsEl.innerHTML = '';
+  [0.7, 0.85, 1].forEach(function(r){
+    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
+  });
+  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
+       st.ua === 'on',
+       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
+  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
+       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
+  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+  if(D.tracks.length > 1){
+    D.tracks.forEach(function(t){
+      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+    });
+  }
+}
+
+/* ——— старт ——— */
+setTrack(track, false);
+var seen = load(KEY, {t:0, track:null});
+if(seen.t > 2 && (!seen.track || seen.track === trackId)){
+  audio.currentTime = seen.t;
+  mark(segAt(seen.t));
+}
+tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+paint();
+})();
+</script>
+</html>

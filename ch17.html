@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>17. Le cours : hier, j'ai fait</title>
+<link rel="stylesheet" href="reader.css">
+<header><div class="wrap">
+  <div class="top">
+    <a class="back" href="index.html">← глави</a>
+    <div>
+      <h1>17. Le cours : hier, j'ai fait</h1>
+      <div class="sub">Урок: учора я зробила</div>
+    </div>
+  </div>
+  
+<div class="bar js-only">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
+  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+  <span class="time" id="t">0:00</span>
+</div>
+<div class="chips js-only" id="chips"></div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
+</div></header>
+<main><div class="wrap">
+  <p class="datum">Le mardi 7 octobre, dix-huit heures trente — вівторок, 7 жовтня, о пів на сьому вечора</p>
+  <div class="seg" id="s0"><p class="fr">Madame Forestier écrit un mot au tableau. Un seul, très grand.</p><p class="ua">Мадам Форестьє пише на дошці одне слово. Одне-єдине, дуже великими літерами.</p></div>
+<div class="seg" id="s1"><p class="fr">HIER.</p><p class="ua">УЧОРА.</p></div>
+<div class="seg" id="s2"><p class="fr">— Aujourd'hui, ça va. Vous savez tous dire aujourd'hui. Ce soir, on recule d'un jour.</p><p class="ua">— Із «сьогодні» все гаразд. Сказати «сьогодні» вміють усі. Сьогодні ввечері ми відступаємо на один день назад.</p></div>
+<div class="seg" id="s3"><p class="fr">Elle écrit deux phrases, l'une sous l'autre.</p><p class="ua">Вона пише два речення, одне під одним.</p></div>
+<div class="seg" id="s4"><p class="fr">Aujourd'hui, je travaille. / Hier, j'ai travaillé.</p><p class="ua">Сьогодні я працюю. / Учора я працювала.</p></div>
+<div class="seg" id="s5"><p class="fr">— Deux morceaux. Le petit verbe devant, le grand derrière.</p><p class="ua">— Два шматки. Маленьке дієслово попереду, велике позаду.</p></div>
+<div class="seg" id="s6"><p class="fr">— Le petit change, le grand ne change pas.</p><p class="ua">— Маленьке змінюється, велике не змінюється.</p></div>
+<div class="seg" id="s7"><p class="fr">Natalia regarde le tableau et entend une autre voix.</p><p class="ua">Наталя дивиться на дошку — і чує інший голос.</p></div>
+<div class="seg" id="s8"><p class="fr">Un jeudi, derrière la caisse, Karim a dit : « J'ai demandé une fois. Il a souri. Il n'a pas répondu. »</p><p class="ua">Одного четверга, за касою, Карім сказав: «Я одного разу спитав. Він усміхнувся. Не відповів».</p></div>
+<div class="seg" id="s9"><p class="fr">Sur le moment, elle n'a rien remarqué. Ce soir, elle voit les deux morceaux.</p><p class="ua">Тоді вона нічого не помітила. А сьогодні бачить обидва шматки.</p></div>
+<div class="seg" id="s10"><p class="fr">— Qu'est-ce que vous avez fait hier ? Une phrase chacun. J'écoute.</p><p class="ua">— Що ви робили вчора? По одному реченню від кожного. Я слухаю.</p></div>
+<div class="seg" id="s11"><p class="fr">Nour ne se presse jamais.</p><p class="ua">Нур ніколи не поспішає.</p></div>
+<div class="seg" id="s12"><p class="fr">— Hier, j'ai lu vingt pages. J'ai écrit trente phrases. J'ai fait deux fois la même faute.</p><p class="ua">— Учора я прочитала двадцять сторінок. Написала тридцять речень. Двічі зробила ту саму помилку.</p></div>
+<div class="seg" id="s13"><p class="fr">— Bien. Suivant.</p><p class="ua">— Добре. Наступний.</p></div>
+<div class="seg" id="s14"><p class="fr">Rafael lève la main très haut et parle très fort.</p><p class="ua">Рафаель піднімає руку дуже високо й говорить дуже голосно.</p></div>
+<div class="seg" id="s15"><p class="fr">— Moi ! Hier soir, j'ai sorti avec une fille !</p><p class="ua">— Я! Учора ввечері я виніс дівчину!</p></div>
+<div class="seg" id="s16"><p class="fr">Madame Forestier s'arrête, la craie en l'air.</p><p class="ua">Мадам Форестьє зупиняється з крейдою в повітрі.</p></div>
+<div class="seg" id="s17"><p class="fr">— Vous avez sorti une fille.</p><p class="ua">— Ви винесли дівчину.</p></div>
+<div class="seg" id="s18"><p class="fr">— Oui ! ... Non ?</p><p class="ua">— Так! …Ні?</p></div>
+<div class="seg" id="s19"><p class="fr">— « J'ai sorti », c'est la poubelle. On sort la poubelle, on sort le chien.</p><p class="ua">— «J'ai sorti» — це про сміття. Виносять сміття, виводять собаку.</p></div>
+<div class="seg" id="s20"><p class="fr">— Avec une fille, c'est « je suis sorti ».</p><p class="ua">— А з дівчиною — «je suis sorti», я ходив на побачення.</p></div>
+<div class="seg" id="s21"><p class="fr">La classe rit. Rafael rit plus fort que la classe.</p><p class="ua">Клас сміється. Рафаель сміється голосніше за клас.</p></div>
+<div class="seg" id="s22"><p class="fr">— Je suis sorti avec une fille ! Et après, je suis rentré à deux heures du matin !</p><p class="ua">— Я ходив на побачення з дівчиною! А потім повернувся додому о другій ночі!</p></div>
+<div class="seg" id="s23"><p class="fr">— Voilà. Deux fois juste, dit madame Forestier.</p><p class="ua">— Отак. Двічі правильно, — каже мадам Форестьє.</p></div>
+<div class="seg" id="s24"><p class="fr">Elle écrit six verbes au tableau : ALLER. VENIR. PARTIR. RESTER. ENTRER. SORTIR.</p><p class="ua">Вона пише на дошці шість дієслів: ІТИ. ПРИЙТИ. ПІТИ. ЛИШИТИСЯ. ЗАЙТИ. ВИЙТИ.</p></div>
+<div class="seg" id="s25"><p class="fr">— Ceux-là prennent être. Ce sont des verbes qui bougent.</p><p class="ua">— Оці беруть `être`. Це дієслова, які рухаються.</p></div>
+<div class="seg" id="s26"><p class="fr">— Et rester ? demande Nour.</p><p class="ua">— А «лишитися»? — питає Нур.</p></div>
+<div class="seg" id="s27"><p class="fr">— Rester ne bouge pas, je sais. Il est là quand même.</p><p class="ua">— «Лишитися» не рухається, я знаю. І все одно воно тут.</p></div>
+<div class="seg" id="s28"><p class="fr">Elle écrit encore une phrase et se montre du doigt.</p><p class="ua">Вона пише ще одне речення й показує пальцем на себе.</p></div>
+<div class="seg" id="s29"><p class="fr">Hier, je suis allée au marché.</p><p class="ua">Учора я ходила на ринок.</p></div>
+<div class="seg" id="s30"><p class="fr">— Regardez la fin. Un E. Avec être, le verbe regarde qui parle.</p><p class="ua">— Подивіться на кінець. Одне E. З `être` дієслово дивиться на того, хто говорить.</p></div>
+<div class="seg" id="s31"><p class="fr">Natalia lève la main.</p><p class="ua">Наталя піднімає руку.</p></div>
+<div class="seg" id="s32"><p class="fr">— Hier, je suis allée au cours de danse. Après, je suis rentrée à dix heures.</p><p class="ua">— Учора я ходила на танці. Потім повернулася додому о десятій.</p></div>
+<div class="seg" id="s33"><p class="fr">— Deux E. Parfait.</p><p class="ua">— Два E. Чудово.</p></div>
+<div class="seg" id="s34"><p class="fr">— On n'entend pas les E.</p><p class="ua">— Цих E не чути.</p></div>
+<div class="seg" id="s35"><p class="fr">— Non. On ne les entend pas. On les écrit.</p><p class="ua">— Ні. Їх не чути. Їх пишуть.</p></div>
+<div class="seg" id="s36"><p class="fr">— Et avec avoir ? demande Nour.</p><p class="ua">— А з `avoir`? — питає Нур.</p></div>
+<div class="seg" id="s37"><p class="fr">— Avec avoir, rien ne bouge. « J'ai travaillé », homme ou femme, c'est pareil.</p><p class="ua">— З `avoir` не рухається нічого. «J'ai travaillé» — чоловік чи жінка, однаково.</p></div>
+<div class="seg" id="s38"><p class="fr">Nour écrit tout. Rafael n'écrit rien. Rafael parle.</p><p class="ua">Нур записує все. Рафаель не записує нічого. Рафаель говорить.</p></div>
+<div class="seg" id="s39"><p class="fr">— Hier, je suis venu au cours ! Je suis entré ! Je suis resté deux heures !</p><p class="ua">— Учора я прийшов на курси! Я зайшов! Я пробув тут дві години!</p></div>
+<div class="seg" id="s40"><p class="fr">— Vous êtes surtout resté deux heures à parler.</p><p class="ua">— Ви передусім дві години говорили.</p></div>
+<div class="seg" id="s41"><p class="fr">À vingt heures trente, madame Forestier efface le tableau.</p><p class="ua">О пів на дев'яту мадам Форестьє витирає дошку.</p></div>
+<div class="seg" id="s42"><p class="fr">— Ce soir, Rafael a fait quatre fautes. Quatre fautes à voix haute.</p><p class="ua">— Сьогодні ввечері Рафаель зробив чотири помилки. Чотири помилки вголос.</p></div>
+<div class="seg" id="s43"><p class="fr">Elle repose la craie.</p><p class="ua">Вона кладе крейду.</p></div>
+<div class="seg" id="s44"><p class="fr">— Personne d'autre n'en a fait. Personne d'autre n'a parlé.</p><p class="ua">— Більше ніхто не зробив жодної. Більше ніхто не говорив.</p></div>
+<div class="seg" id="s45"><p class="fr">Dans le métro, Natalia refait sa journée dans sa tête.</p><p class="ua">У метро Наталя переповідає собі подумки свій день.</p></div>
+<div class="seg" id="s46"><p class="fr">Elle a ouvert le rideau. Elle a changé l'eau. Elle a vendu douze roses.</p><p class="ua">Вона підняла ролету. Поміняла воду. Продала дванадцять троянд.</p></div>
+<div class="seg" id="s47"><p class="fr">Elle est sortie trois fois sur le trottoir, avec les seaux.</p><p class="ua">Тричі виходила на тротуар із відрами.</p></div>
+<div class="seg" id="s48"><p class="fr">Avoir, avoir, avoir. Et être, pour le trottoir.</p><p class="ua">`Avoir`, `avoir`, `avoir`. І `être` — на тротуар.</p></div>
+<div class="seg" id="s49"><p class="fr">Elle n'écrit rien dans son carnet. Ce soir, elle n'en a pas besoin.</p><p class="ua">Вона нічого не записує в блокнот. Сьогодні їй це не потрібно.</p></div>
+  <nav class="nav"><a href="ch16.html">← 16. Le lundi, on danse</a><a href="ch18.html">18. La pluie et les chrysanthèmes →</a></nav>
+</div></main>
+<script type="application/json" id="data">{"n": 17, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/17_dialog.mp3", "dur": 270.32, "t": [[0.14, 6.68], [8.08, 8.86], [9.88, 17.24], [18.42, 21.52], [22.92, 28.12], [29.24, 34.7], [35.58, 39.32], [40.32, 44.24], [45.52, 54.64], [55.96, 62.04], [63.2, 68.68], [69.86, 71.84], [72.71, 80.03], [80.94, 82.08], [83.22, 87.64], [88.58, 91.32], [92.18, 95.78], [96.84, 99.06], [99.72, 101.12], [102.2, 108.34], [109.42, 113.14], [114.28, 119.08], [120.08, 124.44], [125.46, 127.58], [128.8, 140.58], [141.609, 146.54], [147.44, 148.14], [149.58, 153.56], [154.74, 158.12], [159.32, 161.96], [162.98, 170.56], [171.44, 172.8], [173.94, 180.48], [181.43, 183.14], [184.02, 185.06], [186.22, 189.64], [190.68, 192.04], [193.18, 200.34], [201.54, 208.82], [208.9, 214.4], [215.32, 219.48], [219.56, 223.78], [224.88, 231.94], [232.86, 234.26], [235.04, 239.42], [240.44, 244.36], [245.46, 251.8], [252.8, 256.839], [258.079, 264.0], [265.22, 270.29]]}]}</script>
+<script>
+(function(){
+document.body.classList.add('js');
+var D;
+try{ D = JSON.parse(document.getElementById('data').textContent); }
+catch(e){ return show('дані глави не прочиталися: '+e); }
+
+var segs = [].slice.call(document.querySelectorAll('.seg'));
+var audio = new Audio();
+audio.preload = 'metadata';
+
+var KEY = 'lf-ch' + D.n, SET = 'lf-set';
+var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var trackId = st.track;
+var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
+var cur = -1, only = -1, lastSaved = -1;
+
+var $ = function(s){ return document.querySelector(s) };
+var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
+    chipsEl=$('#chips'), errEl=$('#err');
+
+function show(m){ if(errEl){ errEl.textContent = m; } }
+function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
+function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+
+/* ——— доріжка ——— */
+function setTrack(t, keepTime){
+  var at = keepTime ? pos() : 0;
+  track = t; trackId = t.id; st.track = t.id; save(SET, st);
+  reindex();
+  audio.src = t.src;
+  audio.load();
+  if(at) audio.currentTime = at;
+  audio.playbackRate = st.rate;
+  paint();
+}
+function pos(){ return audio.currentTime || 0 }
+
+/* ——— підсвітка ——— */
+var timed = [];   // індекси фраз, у яких є таймкод
+function reindex(){
+  timed = [];
+  track.t.forEach(function(p, i){ if(p[0] !== null) timed.push(i) });
+}
+function segAt(time){
+  var lo = 0, hi = timed.length - 1, best = -1;
+  while(lo <= hi){
+    var m = (lo + hi) >> 1;
+    if(track.t[timed[m]][0] <= time + 0.02){ best = timed[m]; lo = m + 1 } else { hi = m - 1 }
+  }
+  return best;
+}
+function mark(i){
+  if(i === cur) return;
+  if(segs[cur]) segs[cur].classList.remove('active');
+  cur = i;
+  if(segs[i]){
+    segs[i].classList.add('active');
+    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
+  }
+}
+
+/* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
+var lastTouch = 0;
+function suspended(){ return Date.now() - lastTouch < 6000 }
+['wheel','touchmove'].forEach(function(ev){
+  window.addEventListener(ev, function(){ lastTouch = Date.now() }, {passive:true});
+});
+
+/* ——— відтворення ——— */
+function playFrom(i, single){
+  var t = track.t[i];
+  if(!t || t[0] === null) return;
+  only = single ? i : -1;
+  audio.currentTime = t[0];
+  mark(i);
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function toggle(){
+  if(audio.paused){
+    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
+    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
+  } else { audio.pause(); }
+}
+function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+
+audio.addEventListener('timeupdate', function(){
+  var p = pos();
+  if(only >= 0){
+    var e = track.t[only][1];
+    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+  }
+  mark(segAt(p));
+  if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
+  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
+});
+audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
+audio.addEventListener('play', function(){ clearErr(); paint() });
+audio.addEventListener('pause', paint);
+audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
+audio.addEventListener('loadedmetadata', function(){
+  if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+});
+
+seek.addEventListener('input', function(){
+  audio.currentTime = seek.value / 1000 * track.dur; only = -1;
+});
+
+segs.forEach(function(el, i){
+  el.addEventListener('click', function(){
+    if(track.t[i][0] === null) return;
+    if(st.mode === 'phrase'){ playFrom(i, true) }
+    else { playFrom(i, false) }
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === ' '){ e.preventDefault(); toggle() }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'r' || e.key === 'R'){ repeat() }
+});
+
+/* ——— кнопки ——— */
+playBtn.addEventListener('click', toggle);
+repBtn.addEventListener('click', repeat);
+
+function chip(label, on, fn){
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button';
+  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
+  chipsEl.appendChild(b);
+}
+function paint(){
+  playBtn.textContent = audio.paused ? '▶' : '❚❚';
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  document.body.classList.toggle('ua-off', st.ua === 'active');
+  document.body.classList.toggle('ua-none', st.ua === 'off');
+  audio.playbackRate = st.rate;
+  chipsEl.innerHTML = '';
+  [0.7, 0.85, 1].forEach(function(r){
+    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
+  });
+  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
+       st.ua === 'on',
+       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
+  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
+       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
+  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+  if(D.tracks.length > 1){
+    D.tracks.forEach(function(t){
+      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+    });
+  }
+}
+
+/* ——— старт ——— */
+setTrack(track, false);
+var seen = load(KEY, {t:0, track:null});
+if(seen.t > 2 && (!seen.track || seen.track === trackId)){
+  audio.currentTime = seen.t;
+  mark(segAt(seen.t));
+}
+tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+paint();
+})();
+</script>
+</html>

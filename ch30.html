@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>30. Rungis, quatre heures du matin</title>
+<link rel="stylesheet" href="reader.css">
+<header><div class="wrap">
+  <div class="top">
+    <a class="back" href="index.html">← глави</a>
+    <div>
+      <h1>30. Rungis, quatre heures du matin</h1>
+      <div class="sub">Ранжис, четверта ранку</div>
+    </div>
+  </div>
+  
+<div class="bar js-only">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
+  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+  <span class="time" id="t">0:00</span>
+</div>
+<div class="chips js-only" id="chips"></div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
+</div></header>
+<main><div class="wrap">
+  <p class="datum">Le vendredi 5 décembre — п'ятниця, 5 грудня</p>
+  <div class="seg" id="s0"><p class="fr">Le réveil sonne à trois heures vingt.</p><p class="ua">Будильник дзвонить о третій двадцять.</p></div>
+<div class="seg" id="s1"><p class="fr">Dehors, pas de métro, pas de bus, pas un bruit. Montreuil dort comme un village.</p><p class="ua">Надворі ні метро, ні автобусів, ні звуку. Монтрей спить, як село.</p></div>
+<div class="seg" id="s2"><p class="fr">À trois heures quarante, une camionnette blanche s'arrête en bas. Solange conduit.</p><p class="ua">О третій сорок унизу зупиняється білий фургончик. За кермом Соланж.</p></div>
+<div class="seg" id="s3"><p class="fr">À l'intérieur, ça sent le carton mouillé et le café.</p><p class="ua">Усередині пахне мокрим картоном і кавою.</p></div>
+<div class="seg" id="s4"><p class="fr">— Bonjour. Le gobelet est pour vous.</p><p class="ua">— Доброго ранку. Стаканчик — вам.</p></div>
+<div class="seg" id="s5"><p class="fr">Le périphérique est vide. Vingt-cinq minutes.</p><p class="ua">Кільцева порожня. Двадцять п'ять хвилин.</p></div>
+<div class="seg" id="s6"><p class="fr">Ce n'est pas un marché. C'est une ville.</p><p class="ua">Це не ринок. Це місто.</p></div>
+<div class="seg" id="s7"><p class="fr">Des hangars longs comme des rues. Des camions qui reculent partout, avec ce bip qui ne s'arrête jamais.</p><p class="ua">Ангари, довгі як вулиці. Вантажівки, що всюди здають назад, із тим писком, який не стихає ніколи.</p></div>
+<div class="seg" id="s8"><p class="fr">Quatre degrés dedans, quatre degrés dehors, et une lumière blanche au plafond.</p><p class="ua">Чотири градуси всередині, чотири надворі, і біле світло під стелею.</p></div>
+<div class="seg" id="s9"><p class="fr">Le pavillon des fleurs à quatre heures du matin : des chariots, des caisses jusqu'en haut, deux cents personnes en manteau.</p><p class="ua">Квітковий павільйон о четвертій ранку: візки, ящики до самого верху, двісті людей у пальтах.</p></div>
+<div class="seg" id="s10"><p class="fr">Tout le monde se connaît.</p><p class="ua">Тут усі одне одного знають.</p></div>
+<div class="seg" id="s11"><p class="fr">Natalia n'a jamais vu autant de fleurs de sa vie.</p><p class="ua">Наталя за все життя не бачила стільки квітів.</p></div>
+<div class="seg" id="s12"><p class="fr">Ici, personne ne dit « c'est joli ». Ici, on dit des chiffres.</p><p class="ua">Тут ніхто не каже «гарно». Тут кажуть цифри.</p></div>
+<div class="seg" id="s13"><p class="fr">— La botte de vingt, douze euros. À partir de six bottes, onze euros.</p><p class="ua">— В'язка по двадцять — дванадцять євро. Від шести в'язок — одинадцять.</p></div>
+<div class="seg" id="s14"><p class="fr">— Six bottes.</p><p class="ua">— Шість в'язок.</p></div>
+<div class="seg" id="s15"><p class="fr">— Six. Rouge, blanc ?</p><p class="ua">— Шість. Червоні, білі?</p></div>
+<div class="seg" id="s16"><p class="fr">— Quatre rouge, deux blanc. Et vos renoncules, elles sont à combien ce matin ?</p><p class="ua">— Чотири червоні, дві білі. А ранункулюси у вас сьогодні по скільки?</p></div>
+<div class="seg" id="s17"><p class="fr">— Quatre-vingts centimes. Elles arrivent de Nice.</p><p class="ua">— Вісімдесят сантимів. Приїхали з Ніцци.</p></div>
+<div class="seg" id="s18"><p class="fr">Solange achète vite. Elle touche, elle plie une tige, elle repose.</p><p class="ua">Соланж купує швидко. Торкається, згинає стебло, кладе назад.</p></div>
+<div class="seg" id="s19"><p class="fr">Elle dit non trois fois plus souvent que oui.</p><p class="ua">Вона каже «ні» втричі частіше, ніж «так».</p></div>
+<div class="seg" id="s20"><p class="fr">— Celles-là ont trop voyagé.</p><p class="ua">— Оці забагато їхали.</p></div>
+<div class="seg" id="s21"><p class="fr">— Comment vous voyez ça ?</p><p class="ua">— Як ви це бачите?</p></div>
+<div class="seg" id="s22"><p class="fr">— La coupe. Elle est sèche. Dans quatre jours, il n'y a plus rien.</p><p class="ua">— По зрізу. Він сухий. За чотири дні від них нічого не лишиться.</p></div>
+<div class="seg" id="s23"><p class="fr">À cinq heures, le chariot est plein : quatre cent vingt tiges, six cartons, deux seaux.</p><p class="ua">О п'ятій візок повний: чотириста двадцять стебел, шість коробок, два відра.</p></div>
+<div class="seg" id="s24"><p class="fr">À la caisse, Solange paie. Trois cent quatre-vingt-douze euros.</p><p class="ua">На касі Соланж платить. Триста дев'яносто два євро.</p></div>
+<div class="seg" id="s25"><p class="fr">Natalia regarde le ticket. Elle fait un calcul dans sa tête, et le calcul la réveille mieux que le café.</p><p class="ua">Наталя дивиться на чек. У голові вона рахує — і цей рахунок будить її краще за каву.</p></div>
+<div class="seg" id="s26"><p class="fr">— La rose est à cinquante-cinq centimes.</p><p class="ua">— Троянда коштує п'ятдесят п'ять сантимів.</p></div>
+<div class="seg" id="s27"><p class="fr">— Oui.</p><p class="ua">— Так.</p></div>
+<div class="seg" id="s28"><p class="fr">— Et dans la vitrine, elle est à trois euros.</p><p class="ua">— А у вітрині вона три євро.</p></div>
+<div class="seg" id="s29"><p class="fr">— Oui.</p><p class="ua">— Так.</p></div>
+<div class="seg" id="s30"><p class="fr">— Alors sur chaque rose, il reste...</p><p class="ua">— Отже, з кожної троянди лишається...</p></div>
+<div class="seg" id="s31"><p class="fr">— Beaucoup moins que ce que vous croyez.</p><p class="ua">— Значно менше, ніж ви думаєте.</p></div>
+<div class="seg" id="s32"><p class="fr">Solange compte sur ses doigts, sans se presser.</p><p class="ua">Соланж рахує на пальцях, не поспішаючи.</p></div>
+<div class="seg" id="s33"><p class="fr">— La camionnette. L'essence. Le loyer, qui est six fois mon premier loyer.</p><p class="ua">— Фургон. Бензин. Оренда, яка вшестеро більша за мою першу оренду.</p></div>
+<div class="seg" id="s34"><p class="fr">— La chambre froide, qui tourne toute la nuit. Ce qu'on jette : une fleur sur cinq en hiver.</p><p class="ua">— Холодильна камера, яка працює цілу ніч. Те, що викидаємо: узимку кожна п'ята квітка.</p></div>
+<div class="seg" id="s35"><p class="fr">— Karim. Vous. Et moi, à la fin, s'il reste quelque chose.</p><p class="ua">— Карім. Ви. І я — наприкінці, якщо щось лишається.</p></div>
+<div class="seg" id="s36"><p class="fr">— Et il reste quelque chose ?</p><p class="ua">— А щось лишається?</p></div>
+<div class="seg" id="s37"><p class="fr">— Certains mois.</p><p class="ua">— Деякі місяці.</p></div>
+<div class="seg" id="s38"><p class="fr">Elles ne disent plus rien pendant un moment.</p><p class="ua">Якийсь час вони більше нічого не кажуть.</p></div>
+<div class="seg" id="s39"><p class="fr">À cinq heures et demie, elles boivent un café debout, dans un bar plein d'hommes levés depuis deux heures du matin.</p><p class="ua">О пів на шосту вони п'ють каву стоячи, у барі, повному чоловіків, які на ногах від другої ночі.</p></div>
+<div class="seg" id="s40"><p class="fr">Personne ne parle fort. Tout le monde a les mains rouges.</p><p class="ua">Ніхто не говорить голосно. У всіх червоні руки.</p></div>
+<div class="seg" id="s41"><p class="fr">Natalia ne sent plus ses doigts. Elle a envie de rire, et elle ne sait pas pourquoi.</p><p class="ua">Наталя вже не відчуває пальців. Їй хочеться сміятися, і вона не знає чому.</p></div>
+<div class="seg" id="s42"><p class="fr">Le retour se fait au petit jour. À sept heures, elles déchargent devant la boutique.</p><p class="ua">Назад їдуть на світанку. О сьомій вони розвантажуються перед магазином.</p></div>
+<div class="seg" id="s43"><p class="fr">Les caisses sont lourdes et le trottoir est gelé.</p><p class="ua">Ящики важкі, а тротуар обмерзлий.</p></div>
+<div class="seg" id="s44"><p class="fr">À huit heures et quart, tout est rangé, coupé, dans l'eau.</p><p class="ua">О чверть на дев'яту все розібране, підрізане, у воді.</p></div>
+<div class="seg" id="s45"><p class="fr">Karim pousse la porte à huit heures vingt-deux, écouteurs sur les oreilles. Pour lui, c'est un vendredi normal.</p><p class="ua">Карім штовхає двері о восьмій двадцять дві, навушники на вухах. Для нього це звичайна п'ятниця.</p></div>
+<div class="seg" id="s46"><p class="fr">Natalia met les seaux dehors.</p><p class="ua">Наталя виставляє відра надвір.</p></div>
+<div class="seg" id="s47"><p class="fr">Les roses sont froides. Ce matin, à quatre heures, elles étaient dans un carton, sous une lumière blanche, dans un hangar long comme une rue.</p><p class="ua">Троянди холодні. Сьогодні о четвертій ранку вони лежали в коробці, під білим світлом, в ангарі, довгому як вулиця.</p></div>
+  <nav class="nav"><a href="ch29.html">← 29. Le cours : c'était comment ?</a><a href="ch31.html">31. L'Avent →</a></nav>
+</div></main>
+<script type="application/json" id="data">{"n": 30, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/30_dialog.mp3", "dur": 218.56, "t": [[0.06, 2.28], [3.22, 9.879], [11.16, 16.42], [17.26, 20.9], [21.88, 23.84], [24.98, 27.939], [29.12, 31.24], [32.02, 38.5], [39.54, 44.48], [46.02, 53.92], [54.0, 54.86], [55.98, 59.72], [60.46, 65.4], [66.5, 70.5], [71.32, 71.82], [72.72, 74.4], [75.18, 80.56], [81.3, 83.66], [84.58, 89.26], [90.2, 92.52], [93.44, 94.56], [95.54, 96.5], [97.42, 101.26], [102.34, 108.84], [108.88, 113.46], [114.64, 120.9], [122.14, 124.64], [125.54, 125.8], [126.66, 129.3], [130.12, 130.3], [131.24, 133.579], [134.52, 135.89], [136.92, 139.36], [140.32, 145.46], [146.58, 152.52], [153.7, 159.5], [160.5, 161.88], [162.9, 163.46], [164.72, 166.44], [167.5, 173.48], [174.5, 177.959], [179.0, 183.6], [184.76, 189.66], [190.62, 193.14], [194.38, 197.98], [199.0, 205.5], [206.8, 208.28], [208.98, 218.45]]}]}</script>
+<script>
+(function(){
+document.body.classList.add('js');
+var D;
+try{ D = JSON.parse(document.getElementById('data').textContent); }
+catch(e){ return show('дані глави не прочиталися: '+e); }
+
+var segs = [].slice.call(document.querySelectorAll('.seg'));
+var audio = new Audio();
+audio.preload = 'metadata';
+
+var KEY = 'lf-ch' + D.n, SET = 'lf-set';
+var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var trackId = st.track;
+var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
+var cur = -1, only = -1, lastSaved = -1;
+
+var $ = function(s){ return document.querySelector(s) };
+var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
+    chipsEl=$('#chips'), errEl=$('#err');
+
+function show(m){ if(errEl){ errEl.textContent = m; } }
+function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
+function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+
+/* ——— доріжка ——— */
+function setTrack(t, keepTime){
+  var at = keepTime ? pos() : 0;
+  track = t; trackId = t.id; st.track = t.id; save(SET, st);
+  reindex();
+  audio.src = t.src;
+  audio.load();
+  if(at) audio.currentTime = at;
+  audio.playbackRate = st.rate;
+  paint();
+}
+function pos(){ return audio.currentTime || 0 }
+
+/* ——— підсвітка ——— */
+var timed = [];   // індекси фраз, у яких є таймкод
+function reindex(){
+  timed = [];
+  track.t.forEach(function(p, i){ if(p[0] !== null) timed.push(i) });
+}
+function segAt(time){
+  var lo = 0, hi = timed.length - 1, best = -1;
+  while(lo <= hi){
+    var m = (lo + hi) >> 1;
+    if(track.t[timed[m]][0] <= time + 0.02){ best = timed[m]; lo = m + 1 } else { hi = m - 1 }
+  }
+  return best;
+}
+function mark(i){
+  if(i === cur) return;
+  if(segs[cur]) segs[cur].classList.remove('active');
+  cur = i;
+  if(segs[i]){
+    segs[i].classList.add('active');
+    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
+  }
+}
+
+/* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
+var lastTouch = 0;
+function suspended(){ return Date.now() - lastTouch < 6000 }
+['wheel','touchmove'].forEach(function(ev){
+  window.addEventListener(ev, function(){ lastTouch = Date.now() }, {passive:true});
+});
+
+/* ——— відтворення ——— */
+function playFrom(i, single){
+  var t = track.t[i];
+  if(!t || t[0] === null) return;
+  only = single ? i : -1;
+  audio.currentTime = t[0];
+  mark(i);
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function toggle(){
+  if(audio.paused){
+    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
+    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
+  } else { audio.pause(); }
+}
+function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+
+audio.addEventListener('timeupdate', function(){
+  var p = pos();
+  if(only >= 0){
+    var e = track.t[only][1];
+    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+  }
+  mark(segAt(p));
+  if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
+  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
+});
+audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
+audio.addEventListener('play', function(){ clearErr(); paint() });
+audio.addEventListener('pause', paint);
+audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
+audio.addEventListener('loadedmetadata', function(){
+  if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+});
+
+seek.addEventListener('input', function(){
+  audio.currentTime = seek.value / 1000 * track.dur; only = -1;
+});
+
+segs.forEach(function(el, i){
+  el.addEventListener('click', function(){
+    if(track.t[i][0] === null) return;
+    if(st.mode === 'phrase'){ playFrom(i, true) }
+    else { playFrom(i, false) }
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === ' '){ e.preventDefault(); toggle() }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'r' || e.key === 'R'){ repeat() }
+});
+
+/* ——— кнопки ——— */
+playBtn.addEventListener('click', toggle);
+repBtn.addEventListener('click', repeat);
+
+function chip(label, on, fn){
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button';
+  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
+  chipsEl.appendChild(b);
+}
+function paint(){
+  playBtn.textContent = audio.paused ? '▶' : '❚❚';
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  document.body.classList.toggle('ua-off', st.ua === 'active');
+  document.body.classList.toggle('ua-none', st.ua === 'off');
+  audio.playbackRate = st.rate;
+  chipsEl.innerHTML = '';
+  [0.7, 0.85, 1].forEach(function(r){
+    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
+  });
+  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
+       st.ua === 'on',
+       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
+  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
+       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
+  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+  if(D.tracks.length > 1){
+    D.tracks.forEach(function(t){
+      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+    });
+  }
+}
+
+/* ——— старт ——— */
+setTrack(track, false);
+var seen = load(KEY, {t:0, track:null});
+if(seen.t > 2 && (!seen.track || seen.track === trackId)){
+  audio.currentTime = seen.t;
+  mark(segAt(seen.t));
+}
+tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+paint();
+})();
+</script>
+</html>

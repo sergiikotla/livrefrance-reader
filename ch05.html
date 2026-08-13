@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>5. Chercher du travail</title>
+<link rel="stylesheet" href="reader.css">
+<header><div class="wrap">
+  <div class="top">
+    <a class="back" href="index.html">← глави</a>
+    <div>
+      <h1>5. Chercher du travail</h1>
+      <div class="sub">Пошук роботи</div>
+    </div>
+  </div>
+  
+<div class="bar js-only">
+  <button class="play" id="play" type="button" aria-label="грати">▶</button>
+  <button class="rep" id="rep" type="button" aria-label="повторити фразу">↻</button>
+  <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="позиція">
+  <span class="time" id="t">0:00</span>
+</div>
+<div class="chips js-only" id="chips"></div>
+<p class="hint">Щоб слухати з підсвіткою — відкрийте сторінку в браузері.</p>
+<p class="err" id="err"></p>
+</div></header>
+<main><div class="wrap">
+  <p class="datum">Le jeudi 4 septembre — четвер, 4 вересня</p>
+  <div class="seg" id="s0"><p class="fr">Le matin, Natalia ouvre son ordinateur. Vingt onglets, vingt offres d'emploi.</p><p class="ua">Зранку Наталя відкриває ноутбук. Двадцять вкладок, двадцять вакансій.</p></div>
+<div class="seg" id="s1"><p class="fr">Vendeuse. Serveuse. Caissière.</p><p class="ua">Продавчиня. Офіціантка. Касирка.</p></div>
+<div class="seg" id="s2"><p class="fr">Un contrat à mi-temps, des horaires du soir.</p><p class="ua">Договір на пів ставки, вечірній графік.</p></div>
+<div class="seg" id="s3"><p class="fr">Et toujours la même phrase : « Français courant exigé. »</p><p class="ua">І щоразу та сама фраза: «Вільна французька обов'язково».</p></div>
+<div class="seg" id="s4"><p class="fr">Elle lit cette phrase quinze fois. Puis elle ferme trois onglets.</p><p class="ua">Вона перечитує цю фразу п'ятнадцять разів. Потім закриває три вкладки.</p></div>
+<div class="seg" id="s5"><p class="fr">À midi, elle a un CV. Trois pages.</p><p class="ua">Опівдні в неї є резюме. На три сторінки.</p></div>
+<div class="seg" id="s6"><p class="fr">Le soir, elle va au cours. Elle rentre à neuf heures moins le quart.</p><p class="ua">Увечері вона йде на курси. Повертається за чверть до дев'ятої.</p></div>
+<div class="seg" id="s7"><p class="fr">Oksana est assise sur les marches du cinquième, avec une bouteille de vin.</p><p class="ua">Оксана сидить на сходах п'ятого поверху з пляшкою вина.</p></div>
+<div class="seg" id="s8"><p class="fr">— J'ai lu ton message. Montre-moi ce CV.</p><p class="ua">— Я прочитала твоє повідомлення. Показуй резюме.</p></div>
+<div class="seg" id="s9"><p class="fr">Elles s'installent dans la cuisine. Oksana lit et ne dit rien pendant deux minutes.</p><p class="ua">Вони сідають на кухні. Оксана читає і дві хвилини мовчить.</p></div>
+<div class="seg" id="s10"><p class="fr">— Trois pages, Nata. Ici, personne ne lit trois pages.</p><p class="ua">— Три сторінки, Нато. Тут ніхто не читає трьох сторінок.</p></div>
+<div class="seg" id="s11"><p class="fr">— Mais c'est mon expérience !</p><p class="ua">— Але ж це мій досвід!</p></div>
+<div class="seg" id="s12"><p class="fr">— C'est ton expérience de Kyiv. Ici, ils veulent une page.</p><p class="ua">— Це твій київський досвід. Тут хочуть одну сторінку.</p></div>
+<div class="seg" id="s13"><p class="fr">Oksana prend un stylo rouge. Elle coupe. Elle coupe encore.</p><p class="ua">Оксана бере червону ручку. Ріже. Ріже ще.</p></div>
+<div class="seg" id="s14"><p class="fr">— Ça, non. Ça, non. Ça, oui.</p><p class="ua">— Це — ні. Це — ні. А це — так.</p></div>
+<div class="seg" id="s15"><p class="fr">— Tu es organisée, tu es rapide, tu es sérieuse. Ça, tu le gardes.</p><p class="ua">— Ти організована, ти швидка, ти відповідальна. Оце лишаєш.</p></div>
+<div class="seg" id="s16"><p class="fr">— Je ne parle pas bien français.</p><p class="ua">— Я погано говорю французькою.</p></div>
+<div class="seg" id="s17"><p class="fr">— Alors tu n'écris pas ça.</p><p class="ua">— То й не пиши цього.</p></div>
+<div class="seg" id="s18"><p class="fr">À onze heures, le CV fait une page.</p><p class="ua">Об одинадцятій резюме займає одну сторінку.</p></div>
+<div class="seg" id="s19"><p class="fr">Après, c'est la lettre de motivation. Elles la réécrivent quatre fois.</p><p class="ua">Далі — мотиваційний лист. Вони переписують його чотири рази.</p></div>
+<div class="seg" id="s20"><p class="fr">La première est trop longue. La deuxième est trop triste.</p><p class="ua">Перший — задовгий. Другий — засумний.</p></div>
+<div class="seg" id="s21"><p class="fr">La troisième dit pardon quatre fois.</p><p class="ua">У третьому чотири рази сказано «вибачте».</p></div>
+<div class="seg" id="s22"><p class="fr">— Tu demandes pardon d'exister. Arrête.</p><p class="ua">— Ти просиш пробачення за те, що існуєш. Припини.</p></div>
+<div class="seg" id="s23"><p class="fr">La quatrième est bonne.</p><p class="ua">Четвертий — хороший.</p></div>
+<div class="seg" id="s24"><p class="fr">Elles postulent à huit offres.</p><p class="ua">Вони подаються на вісім вакансій.</p></div>
+<div class="seg" id="s25"><p class="fr">Deux boulangeries, un supermarché, une pharmacie, un pressing, deux cafés, une jardinerie.</p><p class="ua">Дві булочні, супермаркет, аптека, хімчистка, дві кав'ярні, садовий центр.</p></div>
+<div class="seg" id="s26"><p class="fr">À minuit, Oksana met son manteau. Puis elle se retourne.</p><p class="ua">Опівночі Оксана вдягає пальто. Потім обертається.</p></div>
+<div class="seg" id="s27"><p class="fr">— Attends. On répète. Je suis la patronne.</p><p class="ua">— Стривай. Репетируємо. Я — власниця.</p></div>
+<div class="seg" id="s28"><p class="fr">— Oksana, il est minuit.</p><p class="ua">— Оксано, північ.</p></div>
+<div class="seg" id="s29"><p class="fr">— Bonjour, madame. Vous cherchez un travail ?</p><p class="ua">— Добрий день, пані. Ви шукаєте роботу?</p></div>
+<div class="seg" id="s30"><p class="fr">Natalia respire.</p><p class="ua">Наталя вдихає.</p></div>
+<div class="seg" id="s31"><p class="fr">— ... Bonjour. Oui. Je cherche un travail.</p><p class="ua">— …Добрий день. Так. Я шукаю роботу.</p></div>
+<div class="seg" id="s32"><p class="fr">— Vous avez de l'expérience ?</p><p class="ua">— У вас є досвід?</p></div>
+<div class="seg" id="s33"><p class="fr">— J'ai travaillé quatre ans dans la logistique.</p><p class="ua">— Я чотири роки працювала в логістиці.</p></div>
+<div class="seg" id="s34"><p class="fr">— Vous êtes disponible quand ?</p><p class="ua">— Коли ви можете почати?</p></div>
+<div class="seg" id="s35"><p class="fr">— Je suis disponible tout de suite.</p><p class="ua">— Я можу почати одразу.</p></div>
+<div class="seg" id="s36"><p class="fr">— Voilà. Trois phrases. Tu vois : tu sais.</p><p class="ua">— Отак. Три речення. Бачиш: ти вмієш.</p></div>
+<div class="seg" id="s37"><p class="fr">Sur le palier, Oksana ajoute :</p><p class="ua">На сходовому майданчику Оксана додає:</p></div>
+<div class="seg" id="s38"><p class="fr">— Envoie ton CV, on verra. Et à l'entretien, tu respires d'abord.</p><p class="ua">— Надішли резюме, побачимо. І на співбесіді спершу дихай.</p></div>
+<div class="seg" id="s39"><p class="fr">Natalia dort à une heure du matin. Elle rêve en français, très mal.</p><p class="ua">Наталя засинає о першій ночі. Їй сниться сон французькою, дуже поганою.</p></div>
+  <nav class="nav"><a href="ch04.html">← 4. Le premier cours</a><a href="ch06.html">6. Le premier entretien →</a></nav>
+</div></main>
+<script type="application/json" id="data">{"n": 5, "tracks": [{"id": "dialog", "label": "багатоголосна", "src": "audio/05_dialog.mp3", "dur": 148.4, "t": [[0.1, 6.62], [6.76, 9.86], [9.92, 12.32], [13.24, 17.24], [18.22, 21.32], [22.2, 25.12], [26.34, 29.87], [30.62, 34.5], [36.42, 38.46], [39.36, 44.4], [45.52, 49.06], [49.12, 50.18], [50.94, 54.34], [55.4, 59.4], [60.22, 63.04], [63.8, 68.8], [68.88, 70.1], [70.96, 72.02], [72.96, 75.08], [75.84, 80.24], [80.88, 83.78], [84.34, 86.82], [87.54, 89.72], [90.58, 91.68], [92.5, 94.54], [94.58, 101.28], [102.32, 106.28], [107.18, 109.94], [110.72, 112.42], [113.3, 115.34], [116.24, 117.4], [118.76, 121.54], [122.38, 123.58], [124.66, 126.62], [127.68, 128.8], [129.8, 131.2], [132.26, 134.9], [135.8, 137.86], [138.74, 142.64], [143.46, 148.3]]}, {"id": "solo", "label": "одноголосна", "src": "audio/05_solo.mp3", "dur": 169.28, "t": [[0.069, 6.4], [6.44, 9.28], [9.493, 12.32], [13.262, 17.6], [18.905, 22.649], [22.969, 26.409], [28.076, 32.969], [33.049, 37.262], [38.082, 40.409], [41.516, 46.489], [47.905, 51.849], [52.783, 54.089], [55.081, 59.609], [60.893, 65.373], [66.645, 70.013], [70.253, 75.133], [76.472, 78.099], [79.366, 80.507], [81.939, 84.907], [85.027, 90.107], [90.4, 94.347], [94.534, 97.387], [98.805, 101.832], [102.421, 103.552], [104.739, 106.272], [106.485, 113.632], [115.064, 119.072], [120.168, 123.419], [124.252, 125.792], [127.036, 128.912], [130.749, 131.713], [133.282, 136.112], [137.44, 138.592], [140.184, 142.352], [143.68, 144.763], [146.32, 147.973], [149.233, 152.3], [154.03, 156.14], [157.245, 162.54], [164.063, 169.35]]}]}</script>
+<script>
+(function(){
+document.body.classList.add('js');
+var D;
+try{ D = JSON.parse(document.getElementById('data').textContent); }
+catch(e){ return show('дані глави не прочиталися: '+e); }
+
+var segs = [].slice.call(document.querySelectorAll('.seg'));
+var audio = new Audio();
+audio.preload = 'metadata';
+
+var KEY = 'lf-ch' + D.n, SET = 'lf-set';
+var st = load(SET, {rate:1, ua:'on', mode:'flow', scroll:true, track:null});
+var trackId = st.track;
+var track = D.tracks.filter(function(t){return t.id===trackId})[0] || D.tracks[0];
+var cur = -1, only = -1, lastSaved = -1;
+
+var $ = function(s){ return document.querySelector(s) };
+var playBtn=$('#play'), repBtn=$('#rep'), seek=$('#seek'), tEl=$('#t'),
+    chipsEl=$('#chips'), errEl=$('#err');
+
+function show(m){ if(errEl){ errEl.textContent = m; } }
+function clearErr(){ if(errEl && errEl.textContent) errEl.textContent = ''; }
+function load(k,d){ try{ var v=localStorage.getItem(k); return v?Object.assign(d,JSON.parse(v)):d }catch(e){ return d } }
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+function fmt(s){ s=Math.max(0,s|0); return (s/60|0)+':'+('0'+s%60).slice(-2) }
+
+/* ——— доріжка ——— */
+function setTrack(t, keepTime){
+  var at = keepTime ? pos() : 0;
+  track = t; trackId = t.id; st.track = t.id; save(SET, st);
+  reindex();
+  audio.src = t.src;
+  audio.load();
+  if(at) audio.currentTime = at;
+  audio.playbackRate = st.rate;
+  paint();
+}
+function pos(){ return audio.currentTime || 0 }
+
+/* ——— підсвітка ——— */
+var timed = [];   // індекси фраз, у яких є таймкод
+function reindex(){
+  timed = [];
+  track.t.forEach(function(p, i){ if(p[0] !== null) timed.push(i) });
+}
+function segAt(time){
+  var lo = 0, hi = timed.length - 1, best = -1;
+  while(lo <= hi){
+    var m = (lo + hi) >> 1;
+    if(track.t[timed[m]][0] <= time + 0.02){ best = timed[m]; lo = m + 1 } else { hi = m - 1 }
+  }
+  return best;
+}
+function mark(i){
+  if(i === cur) return;
+  if(segs[cur]) segs[cur].classList.remove('active');
+  cur = i;
+  if(segs[i]){
+    segs[i].classList.add('active');
+    for(var k=0;k<segs.length;k++) segs[k].classList.toggle('done', k < i);
+    if(st.scroll && !suspended()) segs[i].scrollIntoView({block:'center', behavior:'smooth'});
+  }
+}
+
+/* автопрокрутка тимчасово мовчить, коли читачка гортає сама */
+var lastTouch = 0;
+function suspended(){ return Date.now() - lastTouch < 6000 }
+['wheel','touchmove'].forEach(function(ev){
+  window.addEventListener(ev, function(){ lastTouch = Date.now() }, {passive:true});
+});
+
+/* ——— відтворення ——— */
+function playFrom(i, single){
+  var t = track.t[i];
+  if(!t || t[0] === null) return;
+  only = single ? i : -1;
+  audio.currentTime = t[0];
+  mark(i);
+  audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) });
+}
+function toggle(){
+  if(audio.paused){
+    if(st.mode === 'phrase'){ playFrom(cur < 0 ? 0 : cur, true); }
+    else { only = -1; audio.play().catch(function(e){ show('аудіо не запустилося: '+e.message) }); }
+  } else { audio.pause(); }
+}
+function repeat(){ if(cur >= 0) playFrom(cur, st.mode === 'phrase'); }
+
+audio.addEventListener('timeupdate', function(){
+  var p = pos();
+  if(only >= 0){
+    var e = track.t[only][1];
+    if(e !== null && p >= e - 0.02){ audio.pause(); audio.currentTime = track.t[only][0]; only = -1; return }
+  }
+  mark(segAt(p));
+  if(!seek.matches(':active')) seek.value = track.dur ? (p / track.dur * 1000) : 0;
+  tEl.textContent = fmt(p) + ' / ' + fmt(track.dur);
+  if((p|0) !== (lastSaved|0)){ lastSaved = p; save(KEY, {t:p, track:trackId}); }
+});
+audio.addEventListener('ended', function(){ only = -1; paint(); save(KEY, {t:0, track:trackId}) });
+audio.addEventListener('play', function(){ clearErr(); paint() });
+audio.addEventListener('pause', paint);
+audio.addEventListener('error', function(){ show('аудіофайл не завантажився: ' + track.src) });
+audio.addEventListener('loadedmetadata', function(){
+  if(!track.dur || !isFinite(track.dur)) track.dur = audio.duration;
+});
+
+seek.addEventListener('input', function(){
+  audio.currentTime = seek.value / 1000 * track.dur; only = -1;
+});
+
+segs.forEach(function(el, i){
+  el.addEventListener('click', function(){
+    if(track.t[i][0] === null) return;
+    if(st.mode === 'phrase'){ playFrom(i, true) }
+    else { playFrom(i, false) }
+  });
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.target.tagName === 'INPUT' || e.metaKey || e.ctrlKey) return;
+  if(e.key === ' '){ e.preventDefault(); toggle() }
+  else if(e.key === 'ArrowLeft'){ e.preventDefault(); playFrom(Math.max(0, cur-1), st.mode==='phrase') }
+  else if(e.key === 'ArrowRight'){ e.preventDefault(); playFrom(Math.min(segs.length-1, cur+1), st.mode==='phrase') }
+  else if(e.key === 'r' || e.key === 'R'){ repeat() }
+});
+
+/* ——— кнопки ——— */
+playBtn.addEventListener('click', toggle);
+repBtn.addEventListener('click', repeat);
+
+function chip(label, on, fn){
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button';
+  b.textContent = label; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.addEventListener('click', function(){ fn(); save(SET, st); paint() });
+  chipsEl.appendChild(b);
+}
+function paint(){
+  playBtn.textContent = audio.paused ? '▶' : '❚❚';
+  playBtn.setAttribute('aria-label', audio.paused ? 'грати' : 'пауза');
+  document.body.classList.toggle('ua-off', st.ua === 'active');
+  document.body.classList.toggle('ua-none', st.ua === 'off');
+  audio.playbackRate = st.rate;
+  chipsEl.innerHTML = '';
+  [0.7, 0.85, 1].forEach(function(r){
+    chip('×' + String(r).replace('.', ','), st.rate === r, function(){ st.rate = r });
+  });
+  chip({on:'переклад', active:'переклад: активна', off:'переклад: сховано'}[st.ua],
+       st.ua === 'on',
+       function(){ st.ua = st.ua === 'on' ? 'active' : st.ua === 'active' ? 'off' : 'on' });
+  chip(st.mode === 'flow' ? 'потік' : 'по фразі', st.mode === 'phrase',
+       function(){ st.mode = st.mode === 'flow' ? 'phrase' : 'flow'; only = -1 });
+  chip('автопрокрутка', st.scroll, function(){ st.scroll = !st.scroll });
+  if(D.tracks.length > 1){
+    D.tracks.forEach(function(t){
+      chip(t.label, t.id === trackId, function(){ if(t.id !== trackId) setTrack(t, true) });
+    });
+  }
+}
+
+/* ——— старт ——— */
+setTrack(track, false);
+var seen = load(KEY, {t:0, track:null});
+if(seen.t > 2 && (!seen.track || seen.track === trackId)){
+  audio.currentTime = seen.t;
+  mark(segAt(seen.t));
+}
+tEl.textContent = fmt(pos()) + ' / ' + fmt(track.dur);
+paint();
+})();
+</script>
+</html>
